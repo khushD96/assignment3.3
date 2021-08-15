@@ -1,0 +1,22 @@
+<html>
+    <body style="text-align: center; text-align: center; background-color:black; color: white;">
+        <br/>
+        <br/>
+        <h2 style="color: red">Cloud Assignment 3.3 Parallel Matrix Multiplication</h2>
+        <h2 style="color: red">-Khush Dwivedi</h2>
+        <h3>Time taken for parallel multiplication: <i style="color: red;">{{timeForExecPar}} </i style="color: seagreen;">ms</h3>
+        <!-- <p>{{matOutPar}} </p>
+        <p>{{matOutSeq}} </p> -->
+        <h3>Hence, with <i style="color: red;">{{numProcessors}}</i style="color: red;"> cores, parallel algorithm runs faster by <i style="color: red;">{{result}} ms</strong></h3>
+        <table style="text-align: center;">
+            {% for row in matOutPar %}
+            <tr>
+                {% for val in row %}
+                <td>{{val}}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+            </table>
+       
+    </body>
+</html>
